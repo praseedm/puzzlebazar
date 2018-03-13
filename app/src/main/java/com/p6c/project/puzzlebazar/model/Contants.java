@@ -11,4 +11,7 @@ public class Contants {
     public static String categoryId;
     public static String user;
     public static List<Question> questionList = new ArrayList<>();
+
+    //
+    public static String cId="CategoryId";
 }

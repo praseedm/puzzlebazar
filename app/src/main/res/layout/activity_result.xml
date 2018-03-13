@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:padding="20dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dis_score"
+                android:text="SCORE : 0"
+                android:textSize="30sp"
+                android:textColor="#ffff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dis_totalQ"
+                android:text="PASSED : 0/10"
+                android:textSize="30sp"
+                android:textColor="#ffff"/>
+
+            <Button
+                android:id="@+id/playAgain"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonstyle"
+                android:clickable="true"
+                android:padding="15dp"
+                android:text="PLAY AGAIN"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/colorAccent"
+                android:onClick="startGame"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
