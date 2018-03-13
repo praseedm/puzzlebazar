@@ -28,8 +28,8 @@
 
     <Button
         android:id="@+id/playB"
-        android:layout_width="220dp"
-        android:layout_height="70dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/buttonstyle"
         android:clickable="true"
@@ -37,6 +37,7 @@
         android:text="PLAY NOW"
         android:textStyle="bold"
         android:textSize="30sp"
-        android:textColor="@color/colorAccent" />
+        android:textColor="@color/colorAccent"
+        android:onClick="startGame"/>
 
 </LinearLayout>

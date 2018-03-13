@@ -1,7 +1,9 @@
 package com.p6c.project.puzzlebazar;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -23,5 +25,11 @@ public class SplashActivity extends AppCompatActivity {
 
         l1.setAnimation(uptodowm);
         playB.setAnimation(downtoup);
+    }
+
+    public void startGame(View view) {
+        Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
