@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         score_txt = findViewById(R.id.score);
         qno_txt = findViewById(R.id.totalQuestions);
         Question_txt = findViewById(R.id.question_text);
+        Question_img = findViewById(R.id.question_image);
         progressBar = findViewById(R.id.progressbar);
         Btn1 = findViewById(R.id.Answer1);
         Btn2 = findViewById(R.id.Answer2);
@@ -136,6 +137,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void showQuestion(int i)  {
+        totalQuestions = Contants.questionList.size();
         if(index < totalQuestions){
             Questionno++;
             qno_txt.setText(String.format("%d / %d",Questionno,totalQuestions));

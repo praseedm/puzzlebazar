@@ -8,6 +8,9 @@ public class Question {
     private String Answer2;
     private String Answer3;
     private String Answer4;
+    private String CorrectAnswer;
+
+    public Question(){}
 
     public String getCorrectAnswer() {
         return CorrectAnswer;
@@ -16,10 +19,6 @@ public class Question {
     public void setCorrectAnswer(String correctAnswer) {
         CorrectAnswer = correctAnswer;
     }
-
-    private String CorrectAnswer;
-
-    public Question(){}
 
     public String getCategoryId() {
         return CategoryId;

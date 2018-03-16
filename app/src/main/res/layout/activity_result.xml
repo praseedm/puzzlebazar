@@ -32,7 +32,8 @@
                 android:id="@+id/dis_totalQ"
                 android:text="PASSED : 0/10"
                 android:textSize="30sp"
-                android:textColor="#ffff"/>
+                android:textColor="#ffff"
+                android:layout_marginBottom="20dp"/>
 
             <Button
                 android:id="@+id/playAgain"

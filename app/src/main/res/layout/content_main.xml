@@ -8,23 +8,36 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:id="@+id/question_image"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:gravity="center"
-        android:visibility="invisible"/>
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/question_text"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:gravity="center"/>
+        android:layout_height="250dp">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:id="@+id/question_image"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:visibility="invisible"/>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_text"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="@string/loading_message"/>
+
+    </RelativeLayout>
+
+
 
     <RelativeLayout
         android:layout_alignParentBottom="true"
@@ -88,7 +101,7 @@
     
         <Button
             android:id="@+id/Answer1"
-            android:text="Answer A"
+            android:text="@string/loading_message"
             android:background="@drawable/buttonstyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,7 +113,7 @@
 
         <Button
             android:id="@+id/Answer2"
-            android:text="Answer B"
+            android:text="@string/loading_message"
             android:background="@drawable/buttonstyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -112,7 +125,7 @@
 
         <Button
             android:id="@+id/Answer3"
-            android:text="Answer C"
+            android:text="@string/loading_message"
             android:background="@drawable/buttonstyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -124,7 +137,7 @@
 
         <Button
             android:id="@+id/Answer4"
-            android:text="Answer D"
+            android:text="@string/loading_message"
             android:background="@drawable/buttonstyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
