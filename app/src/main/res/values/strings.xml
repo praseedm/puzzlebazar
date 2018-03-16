@@ -7,4 +7,5 @@
     <string name="no_internet_connection">No internet connection</string>
     <string name="unknown_error">Failed! Try agian</string>
     <string name="title_activity_profile">ProfileActivity</string>
+    <string name="splashText">PuzzleBazar</string>
 </resources>
