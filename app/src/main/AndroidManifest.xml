@@ -25,7 +25,12 @@
         <activity
             android:name=".ResultActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity"
+            android:label="Login"/>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Profile"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

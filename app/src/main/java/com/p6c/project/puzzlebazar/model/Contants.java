@@ -6,6 +6,7 @@ import java.util.List;
 public class Contants {
     public static String def_status = "Hi,Lets Explore with VaYa";
     public static String Question_Ref = "Questions";
+    public static String User_Ref = "Users";
 
     //Save Context
     public static String categoryId;
@@ -14,4 +15,7 @@ public class Contants {
 
     //
     public static String cId="CategoryId";
+
+    // Default //
+    public static String PhotoUrl = "https://lh3.googleusercontent.com/-A0bLEiTO2pE/AAAAAAAAAAI/AAAAAAAAAII/ZMgW6UatRBM/s96-c/photo.jpg;";
 }

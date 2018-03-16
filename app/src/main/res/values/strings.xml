@@ -2,4 +2,9 @@
     <string name="app_name">puzzlebazar</string>
     <string name="title_activity_main">puzzlebazar</string>
     <string name="loading_message">Loading ....</string>
+    <string name="sigin_msg">SIGN IN WITH GOOGLE</string>
+    <string name="sign_in_cancelled">Sigin to continue</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="unknown_error">Failed! Try agian</string>
+    <string name="title_activity_profile">ProfileActivity</string>
 </resources>

@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".SplashActivity">
 
     <LinearLayout
         android:id="@+id/l1"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -19,25 +20,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="130dp"
             android:text="PuzzleBazar"
             android:textColor="@android:color/white"
             android:textSize="40sp" />
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/playB"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@drawable/buttonstyle"
-        android:clickable="true"
-        android:padding="15dp"
-        android:text="PLAY NOW"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:textColor="@color/colorAccent"
-        android:onClick="startGame"/>
 
 </LinearLayout>

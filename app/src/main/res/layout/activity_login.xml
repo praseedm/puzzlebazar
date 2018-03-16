@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@color/colorPrimaryDark">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/signB"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/sigin_msg"
+        android:textSize="@dimen/optionTextSize"
+        android:textColor="@android:color/white"/>
+
+
+    
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signB"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+   <!-- <android.support.design.widget.Snackbar.SnackbarLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/snackbar"/>-->
+
+</RelativeLayout>
