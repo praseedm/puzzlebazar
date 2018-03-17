@@ -14,7 +14,19 @@
         android:text="test"
         android:gravity="center"
         android:textColor="@android:color/white"
-        android:layout_above="@+id/playB"/>
+        android:layout_above="@+id/playB"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/load_txt"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/load_msg"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
 
     <Button
         android:layout_centerInParent="true"

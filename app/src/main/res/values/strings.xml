@@ -13,4 +13,5 @@
     <string name="catname_4">Sports</string>
     <string name="catname_1">Computer</string>
     <string name="catname_2">Science</string>
+    <string name="load_msg">Loading questions from cloud ...</string>
 </resources>

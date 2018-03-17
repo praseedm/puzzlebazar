@@ -14,6 +14,8 @@ public class Contants {
     public static String category3 = "General";
     public static String category4 = "Sports";
 
+    public static String loadmsg = "Questions shall be in the form of multiple choice\n 10 points for correct answer.";
+
     //Save Context
     public static String categoryId;
     public static String user;

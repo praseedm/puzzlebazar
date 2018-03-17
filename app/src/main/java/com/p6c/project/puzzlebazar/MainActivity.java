@@ -60,33 +60,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Btn4.setOnClickListener(this);
 
         Contants.categoryId = Common.category;
-        loadQuestion(Contants.categoryId);
+        showQuestion(index);
+        //loadQuestion(Contants.categoryId);
     }
 
-    private void loadQuestion(String categoryId) {
-        if(Contants.questionList.size() > 0)
-            Contants.questionList.clear();
 
-        QuesRef.orderByChild(Contants.cId).equalTo(categoryId)
-                .addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        for(DataSnapshot snapshot : dataSnapshot.getChildren()){
-                            Question q = snapshot.getValue(Question.class);
-                            Contants.questionList.add(q);
-                        }
-                        showQuestion(index);
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-
-                    }
-                });
-
-        //Shuffle Questions
-        Collections.shuffle(Contants.questionList);
-    }
 
     @Override
     protected void onResume() {
@@ -158,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Btn3.setText(Contants.questionList.get(index).getAnswer3());
             Btn4.setText(Contants.questionList.get(index).getAnswer4());
 
-            mCountDown.start();
+           // mCountDown.start();
         }
         else{
             Intent intent = new Intent(this,ResultActivity.class);
