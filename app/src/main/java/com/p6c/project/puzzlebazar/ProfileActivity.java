@@ -52,8 +52,8 @@ public class ProfileActivity extends AppCompatActivity {
 
     }
 
-    public void startGame(View view) {
-        Intent intent = new Intent(this,MainActivity.class);
+    public void chooseCategory(View view) {
+        Intent intent = new Intent(this,CategoryActivity.class);
         startActivity(intent);
         finish();
     }

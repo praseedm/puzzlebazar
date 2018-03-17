@@ -3,6 +3,7 @@
     <color name="colorPrimary">#9f7be1</color>
     <color name="colorPrimaryDark">#24292d</color>
     <color name="colorAccent">#9f7be1</color>
+    <color name="cat_backG">#f0eb79</color>
 
     <!-- Auth custom -->
     <color name="material_green_50">#E8F5E9</color>
