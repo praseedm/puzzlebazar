@@ -35,7 +35,8 @@
         <activity
             android:name=".CategoryActivity"
             android:label="@string/label_category" />
-        <activity android:name=".LoadActivity"></activity>
+        <activity android:name=".LoadActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

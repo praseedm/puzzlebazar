@@ -16,6 +16,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.p6c.project.puzzlebazar.model.Common;
 import com.p6c.project.puzzlebazar.model.Contants;
 import com.p6c.project.puzzlebazar.model.Question;
 
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Btn3.setOnClickListener(this);
         Btn4.setOnClickListener(this);
 
-        Contants.categoryId = "01";
+        Contants.categoryId = Common.category;
         loadQuestion(Contants.categoryId);
     }
 

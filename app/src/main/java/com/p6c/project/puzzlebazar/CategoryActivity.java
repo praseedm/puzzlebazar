@@ -31,5 +31,8 @@ public class CategoryActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         Button clicked = (Button) v;
         Common.category = clicked.getText().toString();
+        Common.Score = 0;
+        Intent intent = new Intent(this,LoadActivity.class);
+        startActivity(intent);
     }
 }

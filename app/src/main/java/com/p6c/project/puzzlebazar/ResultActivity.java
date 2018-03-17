@@ -29,7 +29,7 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     public void startGame(View view) {
-        Intent intent = new Intent(this,ProfileActivity.class);
+        Intent intent = new Intent(this,CategoryActivity.class);
         startActivity(intent);
         finish();
     }
