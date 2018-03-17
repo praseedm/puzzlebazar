@@ -32,8 +32,10 @@
             android:name=".ProfileActivity"
             android:label="Profile"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CategoryActivity"
-            android:label="@string/label_category"/>
+        <activity
+            android:name=".CategoryActivity"
+            android:label="@string/label_category" />
+        <activity android:name=".LoadActivity"></activity>
     </application>
 
 </manifest>

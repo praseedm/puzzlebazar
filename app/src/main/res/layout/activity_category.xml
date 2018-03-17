@@ -26,14 +26,13 @@
                 android:layout_height="200dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:background="@color/cat_backG"
+                android:background="@drawable/buttonstyle_large"
                 android:drawableTop="@drawable/computer"
-                android:foreground="?android:attr/selectableItemBackground"
                 android:paddingTop="25dp"
-                android:text="Computer"
+                android:text="@string/catname_1"
                 android:textAllCaps="false"
                 android:textColor="#2f2e2e"
-                android:textSize="18sp" />
+                android:textSize="18sp"/>
 
             <Button
                 android:id="@+id/cat2"
@@ -41,11 +40,11 @@
                 android:layout_height="200dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:background="@color/cat_backG"
+                android:background="@drawable/buttonstyle_large"
                 android:drawableTop="@drawable/science"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:paddingTop="25dp"
-                android:text="Science"
+                android:text="@string/catname_2"
                 android:textAllCaps="false"
                 android:textColor="#2f2e2e"
                 android:textSize="18sp" />
@@ -64,11 +63,11 @@
                 android:layout_height="200dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:background="@color/cat_backG"
+                android:background="@drawable/buttonstyle_large"
                 android:drawableTop="@drawable/general"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:paddingTop="25dp"
-                android:text="General"
+                android:text="@string/catname_3"
                 android:textAllCaps="false"
                 android:textColor="#2f2e2e"
                 android:textSize="18sp" />
@@ -79,11 +78,11 @@
                 android:layout_height="200dp"
                 android:layout_margin="2dp"
                 android:layout_weight="1"
-                android:background="@color/cat_backG"
+                android:background="@drawable/buttonstyle_large"
                 android:drawableTop="@drawable/sports"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:paddingTop="25dp"
-                android:text="Sports"
+                android:text="@string/catname_4"
                 android:textAllCaps="false"
                 android:textColor="#2f2e2e"
                 android:textSize="18sp" />
@@ -95,7 +94,6 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="choose category to play"
-            android:textSize="?android:attr/textAppearanceSmall"
             android:layout_marginTop="10dp"
             android:textColor="@android:color/white"/>
 

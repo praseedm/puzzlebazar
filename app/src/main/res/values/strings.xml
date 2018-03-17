@@ -9,4 +9,8 @@
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="splashText">PuzzleBazar</string>
     <string name="label_category">select category</string>
+    <string name="catname_3">General</string>
+    <string name="catname_4">Sports</string>
+    <string name="catname_1">Computer</string>
+    <string name="catname_2">Science</string>
 </resources>

@@ -19,6 +19,8 @@
         </item> <!-- Whatever color you want-->
     </style>
 
+
+
     <style name="GreenTheme" parent="FirebaseUI">
         <!-- Required for sign-in flow styling -->
         <item name="colorPrimary">@color/material_green_500</item>

@@ -8,6 +8,12 @@ public class Contants {
     public static String Question_Ref = "Questions";
     public static String User_Ref = "Users";
 
+    //categories
+    public static String category1 = "Computer";
+    public static String category2 = "Science";
+    public static String category3 = "General";
+    public static String category4 = "Sports";
+
     //Save Context
     public static String categoryId;
     public static String user;
