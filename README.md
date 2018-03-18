@@ -6,5 +6,5 @@ App features:
    1. Quick login using Google login.
    2. Select topic amoung different categories.
    3. Save scores on cloud.
-   4. User can share their score amoung their friends on global scoreboard.
-   5. User view global scoreboard on selected category.
+   4. User can share score amoung their friends on global scoreboard.
+   5. User can view global scoreboard on selected category.
