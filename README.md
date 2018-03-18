@@ -12,4 +12,4 @@ App features:
    
   ### Screenshots
 ![11](https://user-images.githubusercontent.com/13822610/37568264-b7e8e904-2af8-11e8-814a-7b0db05a394d.jpg)
-![22](https://user-images.githubusercontent.com/13822610/37568310-746c2cf8-2af9-11e8-9839-fe341842ff89.jpg)
+![22](https://user-images.githubusercontent.com/13822610/37568344-e13338b8-2af9-11e8-924d-3fe290d6811f.jpg)
