@@ -47,7 +47,8 @@
                 android:textStyle="bold"
                 android:textSize="25sp"
                 android:textColor="@color/colorAccent"
-                android:onClick="startGame"/>
+                android:onClick="startGame"
+                android:visibility="invisible"/>
 
         </LinearLayout>
 

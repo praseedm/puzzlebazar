@@ -5,6 +5,7 @@
     <color name="colorAccent">#9f7be1</color>
     <color name="cat_backG">#f0eb79</color>
     <color name="cat_dark">#e1dc76</color>
+    <color name="list_txt">#000</color>
 
     <!-- Auth custom -->
     <color name="material_green_50">#E8F5E9</color>

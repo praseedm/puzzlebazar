@@ -7,6 +7,7 @@ public class Contants {
     public static String def_status = "Hi,Lets Explore with VaYa";
     public static String Question_Ref = "Questions";
     public static String User_Ref = "Users";
+    public static String Score_Ref = "Scores";
 
     //categories
     public static String category1 = "Computer";
