@@ -18,7 +18,7 @@ import com.p6c.project.puzzlebazar.model.ScoreObj;
 public class ResultActivity extends AppCompatActivity {
 
     TextView score_view, total_view;
-    Button playB;
+    Button playB,scoreB;
     private FirebaseAuth mAuth ;
     private FirebaseUser mFbUser;
     DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
@@ -31,6 +31,7 @@ public class ResultActivity extends AppCompatActivity {
         score_view = findViewById(R.id.dis_score);
         total_view = findViewById(R.id.dis_totalQ);
         playB = findViewById(R.id.playAgain);
+        scoreB = findViewById(R.id.scoreB);
 
         Bundle extra = getIntent().getExtras();
         if(extra != null){
@@ -45,12 +46,19 @@ public class ResultActivity extends AppCompatActivity {
         mFbUser = mAuth.getCurrentUser();
         //write score to cloud
         ScoreObj newObj = new ScoreObj(mFbUser.getUid(),mFbUser.getDisplayName(),mFbUser.getPhotoUrl().toString(),score, Common.category);
-        mRootRef.child(Contants.Score_Ref).child(Common.category).push()//.child(mFbUser.getUid()+"_"+Common.category)
+        mRootRef.child(Contants.Score_Ref).child(Common.category).child(mFbUser.getUid()+"_"+Common.category)
                 .setValue(newObj);
         playB.setVisibility(View.VISIBLE);
+        scoreB.setVisibility(View.VISIBLE);
     }
 
     public void startGame(View view) {
+        Intent intent = new Intent(this,ProfileActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void showScoreBoard(View view) {
         Intent intent = new Intent(this,ScoreBoardActivity.class);
         startActivity(intent);
         finish();

@@ -59,9 +59,8 @@
             android:onClick="chooseCategory"
             android:padding="15dp"
             android:text="START"
-            android:textColor="@color/colorAccent"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textColor="@color/button_txt"
+            android:textSize="25sp" />
 
     </RelativeLayout>
 

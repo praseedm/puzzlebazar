@@ -30,8 +30,9 @@
             android:label="Login" />
         <activity
             android:name=".ProfileActivity"
-            android:label="Profile"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="Welcome"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTask"/>
         <activity
             android:name=".CategoryActivity"
             android:label="@string/label_category" />
@@ -39,7 +40,8 @@
             android:name=".LoadActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ScoreBoardActivity"
-            android:label="Scoreboard"/>
+            android:label="Scoreboard"
+            android:parentActivityName=".ProfileActivity"/>
     </application>
 
 </manifest>

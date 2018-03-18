@@ -16,6 +16,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.p6c.project.puzzlebazar.model.Common;
 import com.p6c.project.puzzlebazar.model.Contants;
 import com.p6c.project.puzzlebazar.model.ScoreObj;
 import com.p6c.project.puzzlebazar.model.ScoreViewholder;
@@ -32,7 +33,7 @@ public class ScoreBoardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_score_board);
         scorelist = findViewById(R.id.score_listview);
 
-        scoreRef= mRootRef.child(Contants.Score_Ref).child(Contants.category1).orderByChild("score");
+        scoreRef= mRootRef.child(Contants.Score_Ref).child(Common.category).orderByChild("score");
         showList();
     }
 

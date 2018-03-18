@@ -20,7 +20,7 @@ import java.util.Collections;
 
 public class LoadActivity extends AppCompatActivity {
     TextView category_info,load_txt;
-    Button playB;
+    Button playB, scoreB;
     FirebaseDatabase fdb = FirebaseDatabase.getInstance();
     DatabaseReference mRef,QuesRef=fdb.getReference(Contants.Question_Ref);
     String totalRef = "total";
@@ -34,6 +34,7 @@ public class LoadActivity extends AppCompatActivity {
         setContentView(R.layout.activity_load);
         category_info = findViewById(R.id.cat_info);
         playB = findViewById(R.id.playB);
+        scoreB = findViewById(R.id.newButton);
         load_txt = findViewById(R.id.load_txt);
         String msg = "Category " +Common.category + " selected,";
         category_info.setText(String.format("%s \n %s",msg, Contants.loadmsg));
@@ -83,6 +84,7 @@ public class LoadActivity extends AppCompatActivity {
                             if(temp_count == total_count){
                                 load_txt.setVisibility(View.GONE);
                                 playB.setVisibility(View.VISIBLE);
+                                scoreB.setVisibility(View.VISIBLE);
                             }
                         }
 
@@ -100,6 +102,12 @@ public class LoadActivity extends AppCompatActivity {
         //Shuffle Questions
         Collections.shuffle(Contants.questionList);
         Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void showScores(View view) {
+        Intent intent = new Intent(this,ScoreBoardActivity.class);
         startActivity(intent);
         finish();
     }

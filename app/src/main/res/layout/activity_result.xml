@@ -35,20 +35,43 @@
                 android:textColor="#ffff"
                 android:layout_marginBottom="20dp"/>
 
-            <Button
-                android:id="@+id/playAgain"
-                android:layout_width="250dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/buttonstyle"
-                android:clickable="true"
-                android:padding="15dp"
-                android:text="PLAY AGAIN"
-                android:textStyle="bold"
-                android:textSize="25sp"
-                android:textColor="@color/colorAccent"
-                android:onClick="startGame"
-                android:visibility="invisible"/>
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/playAgain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonstyle"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:text="PLAY AGAIN"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/button_txt"
+                    android:onClick="startGame"
+                    android:visibility="invisible"/>
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/scoreB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonstyle_score"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:text="SCORES"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/button_txt"
+                    android:onClick="showScoreBoard"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+
 
         </LinearLayout>
 

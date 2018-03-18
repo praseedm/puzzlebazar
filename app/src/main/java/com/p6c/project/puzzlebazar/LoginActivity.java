@@ -95,7 +95,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void sigin() {
-        Toast.makeText(this, "Sigin", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Connecting...", Toast.LENGTH_SHORT).show();
         startActivityForResult(
                 AuthUI.getInstance()
                         .createSignInIntentBuilder()

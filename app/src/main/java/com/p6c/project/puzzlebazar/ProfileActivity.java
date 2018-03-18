@@ -6,6 +6,8 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -52,9 +54,37 @@ public class ProfileActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.profile_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id){
+            case R.id.siginout :
+                siginout();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void siginout() {
+        mAuth.signOut();
+        startLogin();
+    }
+
+    private void startLogin() {
+        Intent login = new Intent(this, LoginActivity.class);
+        login.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(login);
+        finish();
+    }
+
     public void chooseCategory(View view) {
         Intent intent = new Intent(this,CategoryActivity.class);
         startActivity(intent);
-        finish();
     }
 }
