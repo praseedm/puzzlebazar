@@ -11,5 +11,5 @@ App features:
    6.Beautiful and user friendly ui
    
   ### Screenshots
-| ![11](https://user-images.githubusercontent.com/13822610/37568237-6cc411d8-2af8-11e8-8ec2-569e04e8a388.jpg) |
-
+![11](https://user-images.githubusercontent.com/13822610/37568264-b7e8e904-2af8-11e8-814a-7b0db05a394d.jpg)
+![22](https://user-images.githubusercontent.com/13822610/37568290-3a46f558-2af9-11e8-97e4-7c951098a271.jpg)
