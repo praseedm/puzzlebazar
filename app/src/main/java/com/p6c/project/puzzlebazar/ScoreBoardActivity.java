@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
@@ -26,13 +27,16 @@ public class ScoreBoardActivity extends AppCompatActivity {
     Query scoreRef;
     RecyclerView scorelist;
     FirebaseRecyclerAdapter<ScoreObj,ScoreViewholder> mAdapter;
+    TextView catdisplay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_board);
         scorelist = findViewById(R.id.score_listview);
+        catdisplay = findViewById(R.id.score_cattxt);
 
+        catdisplay.setText(Common.category);
         scoreRef= mRootRef.child(Contants.Score_Ref).child(Common.category).orderByChild("score");
         showList();
     }

@@ -7,6 +7,16 @@
     tools:context=".ScoreBoardActivity"
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/score_cattxt"
+        android:textColor="@color/cat_backG"
+        android:padding="5dp"
+        android:textAllCaps="true"/>
+
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
