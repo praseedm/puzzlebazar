@@ -1,6 +1,6 @@
 # Puzzlebazar
 puzzlebazar is the game which leads you to the world of knowledge. Puzzlebazar is an Cloud-connected Android app in which users can play quizzes in different categories.
-This app is made for the purpose to showcase my project for learning purposes.
+This app is made to showcase my project for learning purposes.
 
 App features:
    1. Quick login using Google login.
